@@ -19,11 +19,12 @@ export default class SignIn extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    // const data = new FormData(event.currentTarget);
-    // console.log({
-    //   email: data.get("email"),
-    //   password: data.get("password"),
-    // });
+    console.log();
+    const data = new FormData(event.currentTarget);
+    console.log({
+      email: data.get("email"),
+      password: data.get("password"),
+    });
   };
 
   render() {
@@ -78,7 +79,7 @@ export default class SignIn extends Component {
               type="submit"
               fullWidth
               variant="contained"
-              color="warning"
+              color="primary"
               sx={{ mt: 3, mb: 2 }}
             >
               нэвтрэх
